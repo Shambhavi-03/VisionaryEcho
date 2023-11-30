@@ -1,0 +1,182 @@
+Date/Time:       2023-12-01 00:58:45 
+Command line:    C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\Scripts\briefcase dev
+
+OS Release:      Windows 10
+OS Version:      10.0.10240
+Architecture:    AMD64
+Platform:        Windows-10-10.0.10240-SP0
+
+Python exe:      C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\python.exe
+Python version:  3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.3.16
+Target platform: windows
+Target format:   None
+
+Environment Variables:
+    ALLUSERSPROFILE=C:\ProgramData
+    APPDATA=C:\Users\Kuldeep\AppData\Roaming
+    COMMONPROGRAMFILES=C:\Program Files\Common Files
+    COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+    COMMONPROGRAMW6432=C:\Program Files\Common Files
+    COMPUTERNAME=DESKTOP-RM750FS
+    COMSPEC=C:\Windows\system32\cmd.exe
+    HOMEDRIVE=C:
+    HOMEPATH=\Users\Kuldeep
+    LOCALAPPDATA=C:\Users\Kuldeep\AppData\Local
+    LOGONSERVER=\\DESKTOP-RM750FS
+    NUMBER_OF_PROCESSORS=4
+    OS=Windows_NT
+    PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311;C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Kuldeep\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Kuldeep\AppData\Roaming\npm
+    PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    PROCESSOR_ARCHITECTURE=AMD64
+    PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+    PROCESSOR_LEVEL=6
+    PROCESSOR_REVISION=4e03
+    PROGRAMDATA=C:\ProgramData
+    PROGRAMFILES=C:\Program Files
+    PROGRAMFILES(X86)=C:\Program Files (x86)
+    PROGRAMW6432=C:\Program Files
+    PROMPT=$P$G
+    PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+    PUBLIC=C:\Users\Public
+    SESSIONNAME=Console
+    SYSTEMDRIVE=C:
+    SYSTEMROOT=C:\Windows
+    TEMP=C:\Users\Kuldeep\AppData\Local\Temp
+    TMP=C:\Users\Kuldeep\AppData\Local\Temp
+    USERDOMAIN=DESKTOP-RM750FS
+    USERDOMAIN_ROAMINGPROFILE=DESKTOP-RM750FS
+    USERNAME=Kuldeep
+    USERPROFILE=C:\Users\Kuldeep
+    WINDIR=C:\Windows
+
+Briefcase Log:
+[00:56:07]                                                                                                                                                                dev.py:228
+           [VisionaryEcho] Starting in dev mode...                                                                                                                        dev.py:228
+                                                                                                                                                                   subprocess.py:711
+           >>> Running Command:                                                                                                                                    subprocess.py:712
+           >>>     'C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\python.exe' -c 'import runpy,                                                         subprocess.py:713
+           sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("VisionaryEcho", run_name="__main__", alter_sys=True)'                                                          
+           >>> Working Directory:                                                                                                                                  subprocess.py:720
+           >>>     C:\Users\Kuldeep                                                                                                                                subprocess.py:721
+           >>> Environment Overrides:                                                                                                                              subprocess.py:730
+           >>>     PYTHONPATH=C:\Users\Kuldeep\Desktop\speech_to_text_project\VisionaryEcho\src                                                                    subprocess.py:732
+           >>>     PYTHONMALLOC=default                                                                                                                            subprocess.py:732
+           >>>     PYTHONUNBUFFERED=1                                                                                                                              subprocess.py:732
+           >>>     PYTHONDEVMODE=1                                                                                                                                 subprocess.py:732
+           >>>     PYTHONUTF8=1                                                                                                                                    subprocess.py:732
+           ===========================================================================                                                                                    run.py:160
+                                                                                                                                                                   subprocess.py:681
+           Unhandled Exception: System.TypeLoadException: Could not load type 'System.ValueTuple`3' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral,     subprocess.py:681
+           PublicKeyToken=b77a5c561934e089'.                                                                                                                                        
+              at ClrLoader.DomainData..ctor(AppDomain domain)                                                                                                      subprocess.py:681
+              at ClrLoader.ClrLoader.Initialize()                                                                                                                  subprocess.py:681
+[00:58:45]                                                                                                                                                            __main__.py:40
+           Problem running app VisionaryEcho.                                                                                                                         __main__.py:41
+
+Main thread traceback:
+┌─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────┐
+│ C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\__main__.py:25 in main                                                                      │
+│                                                                                                                                                                                  │
+│   22 │   │   command = Command(logger=logger, console=console)                                                                                                                   │
+│   23 │   │   options = command.parse_options(extra=extra_cmdline)                                                                                                                │
+│   24 │   │   command.parse_config(Path.cwd() / "pyproject.toml")                                                                                                                 │
+│ > 25 │   │   command(**options)                                                                                                                                                  │
+│   26 │   except HelpText as e:                                                                                                                                                   │
+│   27 │   │   logger.info()                                                                                                                                                       │
+│   28 │   │   logger.info(str(e))                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────┐                                                      │
+│ │       command = <briefcase.commands.dev.DevCommand object at 0x0000003DD936C0D0>                                        │                                                      │
+│ │       Command = <class 'briefcase.commands.dev.DevCommand'>                                                             │                                                      │
+│ │       console = <briefcase.console.Console object at 0x0000003DD93A3A50>                                                │                                                      │
+│ │             e = BriefcaseCommandError('Problem running app VisionaryEcho.')                                             │                                                      │
+│ │ extra_cmdline = []                                                                                                      │                                                      │
+│ │        logger = <briefcase.console.Log object at 0x0000003DD93E83D0>                                                    │                                                      │
+│ │       options = {'appname': None, 'update_requirements': False, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                                      │
+│ │        result = 200                                                                                                     │                                                      │
+│ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                      │
+│                                                                                                                                                                                  │
+│ C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\commands\dev.py:230 in __call__                                                             │
+│                                                                                                                                                                                  │
+│   227 │   │   │   else:                                                                                                                                                          │
+│   228 │   │   │   │   self.logger.info("Starting in dev mode...", prefix=app.app_name)                                                                                           │
+│   229 │   │   │   env = self.get_environment(app, test_mode=test_mode)                                                                                                           │
+│ > 230 │   │   │   return self.run_dev_app(                                                                                                                                       │
+│   231 │   │   │   │   app,                                                                                                                                                       │
+│   232 │   │   │   │   env,                                                                                                                                                       │
+│   233 │   │   │   │   test_mode=test_mode,                                                                                                                                       │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────┐                                               │
+│ │                 app = <com.example.VisionaryEcho.VisionaryEcho v0.0.1 AppConfig>                                               │                                               │
+│ │             appname = None                                                                                                     │                                               │
+│ │      dist_info_path = WindowsPath('C:/Users/Kuldeep/Desktop/speech_to_text_project/VisionaryEcho/src/VisionaryEcho.dist-info') │                                               │
+│ │                 env = {                                                                                                        │                                               │
+│ │                       │   'PYTHONPATH': 'C:\\Users\\Kuldeep\\Desktop\\speech_to_text_project\\VisionaryEcho\\src',             │                                               │
+│ │                       │   'PYTHONMALLOC': 'default',                                                                           │                                               │
+│ │                       │   'PYTHONUNBUFFERED': '1',                                                                             │                                               │
+│ │                       │   'PYTHONDEVMODE': '1',                                                                                │                                               │
+│ │                       │   'PYTHONUTF8': '1'                                                                                    │                                               │
+│ │                       }                                                                                                        │                                               │
+│ │             options = {}                                                                                                       │                                               │
+│ │         passthrough = []                                                                                                       │                                               │
+│ │             run_app = True                                                                                                     │                                               │
+│ │                self = <briefcase.commands.dev.DevCommand object at 0x0000003DD936C0D0>                                         │                                               │
+│ │           test_mode = False                                                                                                    │                                               │
+│ │ update_requirements = False                                                                                                    │                                               │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                               │
+│                                                                                                                                                                                  │
+│ C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\commands\dev.py:151 in run_dev_app                                                          │
+│                                                                                                                                                                                  │
+│   148 │   │   )                                                                                                                                                                  │
+│   149 │   │                                                                                                                                                                      │
+│   150 │   │   # Start streaming logs for the app.                                                                                                                                │
+│ > 151 │   │   self._stream_app_logs(                                                                                                                                             │
+│   152 │   │   │   app,                                                                                                                                                           │
+│   153 │   │   │   popen=app_popen,                                                                                                                                               │
+│   154 │   │   │   test_mode=test_mode,                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────────── locals ──────────────────────────────────────────────────┐                                                                   │
+│ │         app = <com.example.VisionaryEcho.VisionaryEcho v0.0.1 AppConfig>                                   │                                                                   │
+│ │   app_popen = <Popen: returncode: 3762504530 args: ['C:\\Users\\Kuldeep\\AppData\\Local\\P...>             │                                                                   │
+│ │         env = {                                                                                            │                                                                   │
+│ │               │   'PYTHONPATH': 'C:\\Users\\Kuldeep\\Desktop\\speech_to_text_project\\VisionaryEcho\\src', │                                                                   │
+│ │               │   'PYTHONMALLOC': 'default',                                                               │                                                                   │
+│ │               │   'PYTHONUNBUFFERED': '1',                                                                 │                                                                   │
+│ │               │   'PYTHONDEVMODE': '1',                                                                    │                                                                   │
+│ │               │   'PYTHONUTF8': '1'                                                                        │                                                                   │
+│ │               }                                                                                            │                                                                   │
+│ │ main_module = 'VisionaryEcho'                                                                              │                                                                   │
+│ │     options = {}                                                                                           │                                                                   │
+│ │ passthrough = []                                                                                           │                                                                   │
+│ │        self = <briefcase.commands.dev.DevCommand object at 0x0000003DD936C0D0>                             │                                                                   │
+│ │   test_mode = False                                                                                        │                                                                   │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                   │
+│                                                                                                                                                                                  │
+│ C:\Users\Kuldeep\AppData\Local\Programs\Python\Python311\Lib\site-packages\briefcase\commands\run.py:190 in _stream_app_logs                                                     │
+│                                                                                                                                                                                  │
+│   187 │   │   │   │   # If we're monitoring an actual app (not just a log stream),                                                                                               │
+│   188 │   │   │   │   # and the app didn't exit cleanly, surface the error to the user.                                                                                          │
+│   189 │   │   │   │   if popen.returncode != 0:                                                                                                                                  │
+│ > 190 │   │   │   │   │   raise BriefcaseCommandError(f"Problem running app {app.app_name}.")                                                                                    │
+│   191 │   │                                                                                                                                                                      │
+│   192 │   │   except KeyboardInterrupt:                                                                                                                                          │
+│   193 │   │   │   pass  # Catch CTRL-C to exit normally                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────── locals ─────────────────────────────────────────────┐                                                                              │
+│ │          app = <com.example.VisionaryEcho.VisionaryEcho v0.0.1 AppConfig>                       │                                                                              │
+│ │ clean_filter = None                                                                             │                                                                              │
+│ │ clean_output = False                                                                            │                                                                              │
+│ │  exit_filter = <function LogFilter.test_filter.<locals>.filter_func at 0x0000003DDC4B5120>      │                                                                              │
+│ │   log_filter = <briefcase.commands.run.LogFilter object at 0x0000003DDC057F10>                  │                                                                              │
+│ │   log_stream = False                                                                            │                                                                              │
+│ │        popen = <Popen: returncode: 3762504530 args: ['C:\\Users\\Kuldeep\\AppData\\Local\\P...> │                                                                              │
+│ │         self = <briefcase.commands.dev.DevCommand object at 0x0000003DD936C0D0>                 │                                                                              │
+│ │    stop_func = <function RunAppMixin.<lambda> at 0x0000003DDC44BCE0>                            │                                                                              │
+│ │    test_mode = False                                                                            │                                                                              │
+│ └─────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                              │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+BriefcaseCommandError: Problem running app VisionaryEcho.
